@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenant & Apartment Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="{{ url_for('main.handle_apartments') }}">View Apartments</a>
+            <a href="{{ url_for('main.handle_tenants') }}">View Tenants</a>
+            <a href="{{ url_for('main.handle_payments') }}">View Rent Payments</a>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="welcome-section">
+            <h1>Welcome to the Tenant and Apartment Management System</h1>
+            <p>This is the home of all your tenant, apartment, and rent payment management needs. Easily manage apartments and tenants in one place!</p>
+            <p>Use the navigation above to view apartments, tenants, or rent payments, or manage them as needed.</p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="{{ url_for('main.handle_apartments') }}" class="btn">Manage Apartments</a>
+            <a href="{{ url_for('main.handle_tenants') }}" class="btn">Manage Tenants</a>
+            <a href="{{ url_for('main.handle_payments') }}" class="btn">Manage Payments</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tenant and Apartment Management System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
